@@ -47,5 +47,5 @@
     "webpack": "^2.3.3",
     "yargs": "^7.0.2"
   },
-  "main": "dist/index.js"
+  "main": "dist/jshqx.js"
 }

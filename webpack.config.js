@@ -5,7 +5,7 @@ const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const path = require('path');
 const env = require('yargs').argv.env; // use --env with webpack 2
 
-let libraryName = 'game';
+let libraryName = 'jshqx';
 
 let plugins = [], outputFile;
 
@@ -17,7 +17,7 @@ if (env === 'build') {
 }
 
 const config = {
-  entry: __dirname + '/src/index.js',
+  entry: __dirname + '/src/hqx.js',
   devtool: 'source-map',
   output: {
     path: __dirname + '/dist',
