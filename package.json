@@ -5,7 +5,17 @@
   "homepage": "https://github.com/rohan-deshpande/js-hqx",
   "repository": "git://github.com/rohan-deshpande/js-hqx",
   "author": "Rohan Deshpande <rohan@creativelifeform.com> (http://rohandeshpande.com/)",
-  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Dominic Szablewski",
+      "url": "https://github.com/phoboslab"
+    },
+    {
+      "name": "Leonardo Dutra",
+      "url": "https://github.com/leodutra"
+    }
+  ],
+  "license": "GNU",
   "private": true,
   "scripts": {
     "build": "webpack --env build",
@@ -38,11 +48,7 @@
     "eslint-loader": "^1.7.1",
     "istanbul": "1.1.0-alpha.1",
     "istanbul-coveralls": "^1.0.3",
-    "jsdoc": "~3.4.0",
-    "json-server": "^0.9.6",
-    "minami": "~1.1.1",
     "mocha": "^3.2.0",
-    "node-fetch": "^1.6.3",
     "sinon": "^2.1.0",
     "webpack": "^2.3.3",
     "yargs": "^7.0.2"
