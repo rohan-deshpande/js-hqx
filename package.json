@@ -16,7 +16,6 @@
     }
   ],
   "license": "GNU",
-  "private": true,
   "scripts": {
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
