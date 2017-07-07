@@ -1,7 +1,7 @@
 {
   "name": "js-hqx",
   "description": "javascript & canvas pixel art scaling algorithm",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/rohan-deshpande/js-hqx",
   "repository": "git://github.com/rohan-deshpande/js-hqx",
   "author": "Rohan Deshpande <rohan@creativelifeform.com> (http://rohandeshpande.com/)",
