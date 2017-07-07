@@ -160,7 +160,7 @@ var _Interp10 = function( pc, c1, c2, c3 ) {
 
 var getVendorAttribute = function( el, attr ) {
   var uc = attr.charAt(0).toUpperCase() + attr.substr(1);
-  return el[attr] || el["ms"+uc] || el["moz"+uc] || el["webkit"+uc] || el["o"+uc];
+  return el[attr] || el['ms'+uc] || el['moz'+uc] || el['webkit'+uc] || el['o'+uc];
 };
 
 
@@ -168,11 +168,11 @@ var getVendorAttribute = function( el, attr ) {
 // pixels from an image. The naive method recently failed on retina
 // devices with a backgingStoreRatio != 1
 var getImagePixels = function( image, x, y, width, height ) {
-  var canvas = document.createElement("canvas");
-  var ctx = canvas.getContext("2d");
+  var canvas = document.createElement('canvas');
+  var ctx = canvas.getContext('2d');
 
-  var ratio = getVendorAttribute( ctx, "backingStorePixelRatio" ) || 1;
-  ctx.getImageDataHD = getVendorAttribute( ctx, "getImageDataHD" );
+  var ratio = getVendorAttribute( ctx, 'backingStorePixelRatio' ) || 1;
+  ctx.getImageDataHD = getVendorAttribute( ctx, 'getImageDataHD' );
 
   var realWidth = image.width / ratio,
     realHeight = image.height / ratio;
@@ -197,12 +197,12 @@ export default function( img, scale ) {
   var orig, origCtx, scaled, origPixels;
   if (img instanceof HTMLCanvasElement){
     orig = img;
-    origCtx = orig.getContext("2d");
+    origCtx = orig.getContext('2d');
     scaled = orig;
     origPixels = origCtx.getImageData(0, 0, orig.width, orig.height).data;
   } else {
     origPixels = getImagePixels( img, 0, 0, img.width, img.height ).data;
-    scaled = document.createElement("canvas");
+    scaled = document.createElement('canvas');
   }
 
 
@@ -227,7 +227,7 @@ export default function( img, scale ) {
   scaled.width = img.width * scale;
   scaled.height = img.height * scale;
 
-  var scaledCtx = scaled.getContext("2d");
+  var scaledCtx = scaled.getContext('2d');
   var scaledPixels = scaledCtx.getImageData( 0, 0, scaled.width, scaled.height );
   var scaledPixelsData = scaledPixels.data;
 
